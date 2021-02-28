@@ -1,0 +1,17 @@
+.maininhalttextdiv{
+    margin: 20px;
+}
+#maininhalttext {
+    padding: 1em 20% 1em 20%;
+    float: left;
+    margin: 20px;
+    width: 56.5%;
+
+}
+
+/* AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus */
+#mainnav a:hover, #mainnav a:active, #mainnav a:focus { /* Guideline 1.4 Distinguishable 1.4.1 Use of Color Using CSS to change the presentation of a user interface component when it receives focus  C15 interaktive Elemente mittesl Hover Fokus hervorheben */
+    background-color: #DCFFFF;
+    color:#000066;
+    margin: 20px;
+}

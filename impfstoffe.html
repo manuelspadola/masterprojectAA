@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Guideline 3.1 Readable 3.1.1 Language of Page H57 H57: Using language attributes on the html element  -->
+<head>
+    <meta charset="UTF-8">
+    <title>Arten von Impfstoffen</title><!--Guideline 2.4 Navigable 2.4.2 Page Titled H25 Providing a title using the title element -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/impfstoffe.css" />
+    <script>
+        function toggle(id){ <!--Guideline 2.4 Navigable 2.4.2 Bypass Blocks Using an expandable and collapsible menu to bypass block of content -->
+            var n = document.getElementById(id);
+            if (n.style.display === "block") {
+                n.style.display = "none";
+            } else {
+                n.style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="kopf">
+    <!--        <img src="Corona%20Impfung.JPG" alt="Hand die ein Coronaimpffläschchen hält und mit der anderen Hand eine Spritze in das Fläschchen hält und aufzieht" style="width: 100%">-->
+    <div id="kopf2">
+        <h1> <span> Corona Schutzimpfung </span> </h1>
+        <!--            <p>Gemeinsam gegen COVID-19</p>-->
+    </div>
+
+</div>
+<div id="navigation">
+    <a href="#" class="icon" onclick="toggle('navbar')"><i class="fa fa-bars"></i></a>
+    <!--Guideline 2.4 Navigable 2.4.2 Bypass Blocks Using an expandable and collapsible menu to bypass block of content -->
+
+    <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H48 Using ol, ul and dl for lists or groups of links  -->
+    <ul id="navbar">
+        <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+        <!-- Guideline 2.1 Keyboard accessible  2.1.1 Keyboard  H91 Using HTML form controls and links  href von links immer im a TAG Element-->
+        <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+        <li ><a href="index.html" title="dieser Link bringt sie zur Hauptseite von Corona Impfung"><i
+                class="fa fa-home"></i> Home<span class="visually-hidden">dieser Link bringt sie zur Hauptseite von Corona Impfung</span> </a></li>
+
+        <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+        <!-- Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Links durch Zeichen oder Icons für Farbblinde hervor heben -->
+        <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+        <li><a href="proContra.html" title="dieser Link bringt sie zur Seite Pro und Contra Coronaimpfung"><i
+                class="fa fa-bars"></i> Pro&Contra <span
+                class="visually-hidden">dieser Link bringt sie zur Seite Pro und Contra Coronaimpfung</span></a></li>
+        <!-- Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Links durch Zeichen oder Icons für Farbblinde hervor heben -->
+        <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+        <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+        <li class="ausgewaehlt"><a href="coronaZDF.html" title="dieser Link bringt sie zur Seite Corona Zahlen Daten Fakten"><i
+                class="fa fa-bars"></i> Corona ZDF <span
+                class="visually-hidden">dieser Link bringt sie zur Seite Corona Zahlen Daten Fakten</span></a></li>
+
+    </ul>
+</div>
+
+
+
+
+
+<div id="inhalt">
+    <div id="inhaltcenter">
+        <div id="maininhalt">
+            <!--        <div id="maininhaltbild">-->
+
+            <!--        </div>-->
+
+            <div id="maininhalttext">
+                <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H42 Using h1-h6 to identify headings   -->
+                <!-- Guideline 2.4 Navigable 2.4.1 Bypass Blocks H69 Providing heading elements at the beginning of each section of content   -->
+                <a id="cont" tabindex="-1"><h1>Corona Zahlen Daten Fakten</h1></a> <!--Guideline 2.4 Navigable 2.4.2 Bypass Blocks G1 Adding a link at the top of each page to goes directly to the main content -->
+                <br>
+                <p>
+                    Impfungen gelten allgemein als wirksame, präventive Maßnahmen und schützen vor Krankheiten, die früher oft tödlich endeten. Dennoch werden sie oftmals kontrovers diskutiert. Welche Vor- und Nachteile gibt es bei Impfungen und welche Risiken muss man in Kauf nehmen?
+                </p>
+                <br>
+                <br>
+
+                <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H39 Using caption elements to associate data table captions with data tables  -->
+                <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H73 Using the summary attribute of the table element to give an overview of data tables  -->
+                <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H51 Using table markup to present tabular information   -->
+                <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H63 Using the scope attribute to associate header cells and data cells in data tables  -->
+                <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H43 Using id and headers attributes to associate data cells with header cells in data tables  -->
+                <table  summary="In Reihe 1 stehen die 9 Bundesländer von Österreich. In Reihe 2 stehen die Bestätigten Fälle mit aktuellem Datum">
+                    <caption>Zahlen aus Österreich </caption>
+                    <tr>
+                        <th>Bundesland</th>
+                        <th scope="col">Bgld.</th>
+                        <th scope="col">Ktn.</th>
+                        <th scope="col">NÖ</th>
+                        <th scope="col">OÖ</th>
+                        <th scope="col">Sbg.</th>
+                        <th scope="col">Stmk.</th>
+                        <th scope="col">T</th>
+                        <th scope="col">Vbg.</th>
+                        <th scope="col">W</th>
+                        <th scope="col">Österreich gesamt</th>
+                    </tr><tr>
+                    <td>Bestätigte Fälle (Stand 27.02.2021, 15:00 Uhr)</td>
+                    <td>12.250</td>
+                    <td>29.159</td>
+                    <td>72.472</td>
+                    <td>86.153</td>
+                    <td>37.729</td>
+                    <td>55.645</td>
+                    <td>47.392</td>
+                    <td>23.056</td>
+                    <td>91.279</td>
+                    <td>455.135</td>
+                </tr>
+                    <tr>
+                        <td>Testungen (Stand 27.02.2021, 09:30 Uhr)</td>
+                        <td>626.516</td>
+                        <td>673.383</td>
+                        <td>3.348.005</td>
+                        <td>2.121.412</td>
+                        <td>816.538</td>
+                        <td>1.728.795</td>
+                        <td>1.490.318</td>
+                        <td>812.756</td>
+                        <td>3.134.044</td>
+                        <td>14.751.767</td>
+                    </tr>
+
+                </table>
+
+                <style>
+                    table * {
+                        border: 1px solid black;
+                    }
+                    table  {
+                        border: 1px solid black;
+                    }
+
+                </style>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div id="sidebar">
+    <div class="sidebarContainer">
+        <div>
+            <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+            <!-- Guideline 2.4 Navigable 2.4.1 Bypass Blocks H69 Providing heading elements at the beginning of each section of content   -->
+            <img class="sidebarBilder" src="assets/newsletter-corona.jpg"
+                 alt="Tastaturtasten in rot und weiß mit der Aufschrift Corona Newsletter">
+
+
+            <!--Guideline 2.4 Navigable 2.4.2 Bypass Blocks G1 Adding a link at the top of each page to goes directly to the main content -->
+            <a id="side">
+                <h1>Aktuelle Informationen</h1>
+            </a>
+            <p>
+                Lesen Sie hier, welche Symptome das Coronavirus auslöst, wer die besonders gefährdeten Risikogruppen
+                sind, wie das Virus übertragen wird und wie Sie sich gegen eine Ansteckung schützen können. Außerdem
+                finden Sie Erklärungen wichtiger Begriffe wie K1, Absonderungsbescheid oder PCR-Test.
+                <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                <a class="link" href="https://coronavirus.wien.gv.at/"
+                   title="dieser Link bringt sie zur Seite Coronavirus Wien"> Möchten Sie mehr Wissen? <i
+                        class="fa fa-external-link-square"></i><span
+                        class="visually-hidden">dieser Link bringt sie zur Seite Coronavirus Wien</span></a>
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="sidebarContainer">
+        <div>
+            <!-- Guideline 2.4 Navigable 2.4.1 Bypass Blocks H69 Providing heading elements at the beginning of each section of content   -->
+            <h1>Aktuelle Corona-Regeln Wien</h1>
+
+
+            <p>Lesen Sie hier, welche Symptome das Coronavirus auslöst, wer die besonders gefährdeten Risikogruppen
+                sind, wie das Virus übertragen wird und wie Sie sich gegen eine Ansteckung schützen können. Außerdem
+                finden Sie Erklärungen wichtiger Begriffe wie K1, Absonderungsbescheid oder PCR-Test.
+                <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) c7 Using CSS to hide a portion of the link text -->
+                <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                <a class="link" href="https://coronavirus.wien.gv.at/neue-corona-regeln/"
+                   title="dieser Link bringt sie zur Seite Coronavirus Wien"><span class="visually-hidden">Möchten
+                            Sie mehr Wissen? </span> Möchten Sie mehr Wissen? <i
+                        class="fa fa-external-link-square"></i><span
+                        class="visually-hidden">dieser Link bringt sie zur Seite Coronavirus Wien</span></a>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="sidebarContainer">
+        <div>
+            <!-- Guideline 2.4 Navigable 2.4.1 Bypass Blocks H69 Providing heading elements at the beginning of each section of content   -->
+            <h1>Newsletter abonnieren</h1>
+
+            <p>
+                Wenn sie den Newsletter abonnieren werden sie über aktuelle Neuigkeiten informiert.
+            </p>
+
+            <!-- Guideline 1.4 Distinguishable 1.4.1 Use of Color C15 Using CSS to change the presentation of a user interface component when it receives focus  -->
+            <form name="validateForm" method="post" action="form.php" onsubmit="event.preventDefault()">
+
+                <br>
+                <fieldset>
+                    <!-- Guidline 1.3 Adaptable 1.3.1 Info and Relationships G117 Using text to convey information that is conveyed by variations in presentation of text -->
+                    <legend><strong>eMail Eingabe</strong> </legend>
+
+                    <!-- Guideline 1.4 Distinguishable 1.4.1 Use of Color G205 Including a text cue for colored form control labels -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G211 Matching the accessible name to the visible label -->
+                    <p class="required"><label for="email" class="required">eMail (required): </label>
+
+                        <input class="text" type="email" name="email" id="email" value="mrgoogle@gmail.com" required onkeyup="manage(this)" />
+                    </p>
+                    <p>
+                        <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G211 Matching the accessible name to the visible label -->
+                        <input type="radio" name="human" value="robot" id="sm" checked="checked" /> <label for="sm">i
+                        am robot</label><br />
+                        <input type="radio" name="human" value="human" id="sf" required  /> <label for="sf">i am
+                        human</label>
+                    <p>
+                    <p>
+                        <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208 Including the text of the visible label as part of the accessible name -->
+                        <button type="submit" id="submitbutton" disabled onclick="meldungMachen()"><span class="accessibly-hidden">
+                                    Newsletter</span>abonnieren<span class="accessibly-hidden">
+                                    abschicken</span></button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div id="fuss">
+    <p>Webdesign by Manuel Spadola</p>
+</div>
+</body>
+
+
+
+
+</html>

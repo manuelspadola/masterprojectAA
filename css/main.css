@@ -1,0 +1,707 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body * {
+	margin: 0;
+	padding: 0;
+}
+/* AA Guideline 1.4 Distinguishable  1.4.4 Resize text C28 Specifying the size of text containers using em units  */
+input #sm {
+	 width: 1.2em; height: 1.2em;
+}
+/* AA Guideline 1.4 Distinguishable  1.4.4 Resize text C28 Specifying the size of text containers using em units  */
+input #sf {
+	width: 1.2em; height: 1.2em;
+}
+/* AA Guideline 1.4 Distinguishable  1.4.4 Resize text C28 Specifying the size of text containers using em units  */
+input .text {
+	width: 1.2em; height: 1.2em;
+}
+/* AA Guideline 1.4 Distinguishable  1.4.4 Resize text C13 Using percent for font sizes   */
+strong {
+	font-size: larger;
+}
+/* AA Guideline 1.4 Distinguishable 1.4.3 Contrast (Minimum) G18 Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text */
+/* AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus */
+/* Guideline 1.4 Distinguishable 1.4.1 Use of Color C15 Using CSS to change the presentation of a user interface component when it receives foucus interaktive Elemente mittesl Hover Fokus hervorheben */
+/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Links durch Kursive Fette Schrift oder Schriftgrößer für Farbblinde hervor heben*/
+#navigation li:visited, #navigation li:hover, #navigation li:focus, #navigation li:active {
+    font-style: italic; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Kursive um Links für Farbblinde hervor zu heben*/
+    font-weight: bolder; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Fett um Links für Farbblinde hervor zu heben*/
+    background-color: #a0a0a0;/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 8.03*/
+	/*transform: translate(0%,-15%);*/
+}
+
+/* AA Guideline 1.4 Distinguishable 1.4.3 Contrast (Minimum) G18 Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text Kontrast 5.25*/
+/* AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus */
+/* Guideline 1.4 Distinguishable 1.4.1 Use of Color Using CSS to change the presentation of a user interface component when it receives focus  C15 interaktive Elemente mittesl Hover Fokus hervorheben */
+/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Links durch Kursive Fette Schrift oder Schriftgrößer für Farbblinde hervor heben*/
+.link:hover, .link:visited, .link:focus, .link:active{
+	font-style: italic; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Kursive um Links für Farbblinde hervor zu heben*/
+	font-weight: bolder; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Fett um Links für Farbblinde hervor zu heben*/
+	background-color: #ffffff; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 9.3*/
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: sans-serif;
+}
+h1 span {
+	background: rgba(100,101,101,0.50);/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them  Kontrast 5.74*/
+	color: #ffffff;/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 5.74*/
+	/*transition: background 4s;*/
+}
+
+#navigation li.ausgewaehlt {
+    color: #0000e0; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 8.1*/
+}
+
+#kopf{
+
+	background-image: url("../assets/corona-impfung.jpg");
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 150px;
+}
+
+#kopf2 {
+	padding: 1% 72% 1% 9%;
+	position: relative;
+	top: 30%;
+	left: 1%;
+}
+
+#navigation{
+	width: 100%;
+	height: 38px;
+	background-color: #A9A9A9; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 3zu1 mit schwarzem Text und 4,5 zu 1 mit weißem Text*/
+}
+
+#navigation  li{
+	float: left;
+	display: block;
+	list-style-type: none;
+	padding: 10px 20px;
+	border-color: #FFFFFF;/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 8.3*/
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+	background-color: #A9A9A9;/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 8.3*/
+	width: 130px;
+}
+
+#navigation a{
+	display: block;
+	height: 100%;
+	font-variant: small-caps;
+    text-decoration: none;
+    color: inherit;
+}
+
+#inhalt{
+	width: 74%;
+	padding: 1em 4% 1em 2%;
+	float: left;
+
+}
+#maininhalt{
+	display: inline-block!important;
+	border-top: 5px solid #e6e6e6;
+	vertical-align: top;
+	width: 98.9%;
+	float: left;
+	margin: 1px;
+	height: inherit;
+}
+
+/* AA Guideline 1.4 Distinguishable 1.4.3 Contrast (Minimum) G18 Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text Kontrast 5.25*/
+/* AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus */
+#maininhalt:hover, #maininhalt:visited, #maininhalt:focus, #maininhalt:active {
+	background-color: #e6e6e6; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 16.8*/
+}
+#maininhalttext {
+	margin: 20px 20px 20px 0px;
+	width: 45%;
+	float: right;
+}
+#maininhaltbild {
+	margin: 20px 0px 20px 20px;
+	width: 45%;
+	float: left;
+}
+
+#inhalt h1{
+	font-size: 1.6em;
+}
+
+#inhalt *{
+}
+.inhalte {
+	display: inline-block!important;
+	border: 1px solid #e6e6e6;
+	vertical-align: top;
+	width: 32.9%;
+	height: inherit;
+	float: left;
+	margin: 0px;
+}
+
+/* AA Guideline 1.4 Distinguishable 1.4.3 Contrast (Minimum) G18 Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text Kontrast 5.25*/
+.inhalte:hover {
+	background-color: #e6e6e6; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 16.8*/
+}
+.container {
+	margin: 20px;
+	width: auto;
+}
+.inhaltebilder {
+	max-width: 100%;
+	border: 1px solid black;
+	width: 100%;
+}
+
+#sidebar {
+	float: right;
+	width: 20%;
+	display: inline-block!important;
+
+	vertical-align: top;
+}
+
+#sidebar h1{
+	font-size: 1.2em;
+}
+
+#sidebar img {
+	float: left;
+	/*max-width: 100%;*/
+	border: 1px solid black;
+	width: 99%;
+	margin: 20px 0 20px 0;
+}
+
+#sidebar div {
+	margin: 1em;
+	clear: both;
+}
+
+#fuss {
+	width: 100%;
+	text-align: center;
+	clear: both;
+	background-color: #D3D3D3;  /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 14.2*/
+}
+
+p {
+	text-align: justify;
+	line-height: 1.5;
+	/*hyphens: auto;*/
+	font-size: 1.1em;
+}
+.sidebarContainer {
+	display: inline-block!important;
+	border-top: 5px solid #e6e6e6;
+	vertical-align: top;
+	margin: 0 0 20px 20px;
+}
+/* AA Guideline 1.4 Distinguishable 1.4.3 Contrast (Minimum) G18 Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text Kontrast 5.25*/
+.sidebarContainer:hover {
+	background-color: #e6e6e6; /* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them  Kontrast 16.8*/
+}
+/* AA Guideline 1.4 Distinguishable 1.4.3 Contrast (Minimum) G18 Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text Kontrast 5.25*/
+/* AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus */
+input.text:focus { /* Guideline 1.4 Distinguishable 1.4.1 Use of Color C15 Using CSS to change the presentation of a user interface component when it receives foucus */
+	background-color: #7FFF00;
+	color: #000;
+}
+
+/* AA Guideline 1.4 Distinguishable 1.4.3 Contrast (Minimum) G18 Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text Kontrast 5.25*/
+/* AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus */
+input[type=checkbox]:focus + label, input[type=radio]:focus + label { /* Guideline 1.4 Distinguishable 1.4.1 Use of Color C15 Using CSS to change the presentation of a user interface component when it receives foucus */
+	background-color: #FF6;
+	color: #000;
+}
+.required {
+	color:red;
+	text-align: left;
+}
+fieldset p {
+	margin: 20px;
+}
+legend {
+	text-align: center;
+}
+.ueberschrift:focus {
+
+}
+#maininhalttext div:focus {
+
+}
+/* AA Guideline 1.4 Distinguishable 1.4.3 Contrast (Minimum) G18 Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text Kontrast 5.25*/
+/* AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus */
+.container div:focus {
+	background-color: black;
+}
+.inhaltebilder:hover, .inhaltebilder:visited{
+	/*transform: scaleX(-1);*/
+}
+.skip-link { /* Guideline 2.4 Navigable 2.4.2 Bypass Blocks G1 Adding a link at the top of each page to goes directly to the main content --> */
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.skip-link a {/* Guideline 2.4 Navigable 2.4.2 Bypass Blocks G1 Adding a link at the top of each page to goes directly to the main content --> */
+	position: absolute;
+	top: -3em;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 0.5em 0.75em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus */
+.skip-link a:focus { /* Guideline 2.4 Navigable 2.4.2 Bypass Blocks G1 Adding a link at the top of each page to goes directly to the main content --> */
+	top: 0;
+}
+#navigation > a.icon{
+	/*visibility: hidden;*/
+	display: none;
+	color: #000000;
+	list-style-type: none;
+	padding: 10px 20px;
+	border-color: #FFFFFF;/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 8.3*/
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	background-color: #A9A9A9;/* Guideline 1.4 Distinguishable 1.4.1 Use of Color G183 Using contrast ratio 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them Kontrast 8.3*/
+	/*width: 100%;*/
+	position: relative;
+	float: right;
+}
+.visually-hidden { /* Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) c7 Using CSS to hide a portion of the link text */
+	/*clip-path: inset(100%);*/
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+.accessibly-hidden { /*  Guideline 2.5 Input Modalities 2.5.3 Label in Name G208 Including the text of the visible label as part of the accessible name */
+	/*clip: rect(0 0 0 0);*/
+	/*clip-path: inset(50%);*/
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+
+
+/*Diese Regeln sorgen dafür, dass die Navigationseinträge untereinander geschrieben werden. So bleibt auch auf kleinen Bildschirmen alles schön.
+*/
+@media screen and (max-width: 1599px){
+	.inhalte {
+		height: 480px;
+	}
+}
+@media screen and (max-device-width: 1599px){
+	.inhalte {
+		height: 480px;
+	}
+}
+@media screen and (max-width: 1374px){
+	.inhalte {
+		height: 500px;
+	}
+}
+@media screen and (max-device-width: 1374px){
+	.inhalte {
+		height: 500px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.inhalte {
+		width: 49.3%;
+		height: 480px;
+	}
+}
+@media screen and (max-device-width: 1200px){
+	.inhalte {
+		width: 49.3%;
+		height: 480px;
+	}
+}
+
+@media screen and (max-width: 924px){
+	.inhalte {
+		height: 500px;
+	}
+}
+@media screen and (max-device-width: 924px){
+	.inhalte {
+		height: 500px;
+	}
+}
+@media screen and (max-width: 866px){
+	.inhalte {
+		height: auto;
+	}
+}
+@media screen and (max-device-width: 866px){
+	.inhalte {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1110px){
+	#maininhalttext {
+		width: 42%;
+	}
+	#maininhaltbild {
+		width: 42%;
+	}
+}
+@media screen and (max-device-width: 1110px){
+	#maininhalttext {
+		width: 42%;
+	}
+	#maininhaltbild {
+		width: 42%;
+	}
+}
+
+
+
+
+@media screen and (max-width: 867px){
+	.inhalte {
+		height: 500px;
+	}
+}
+@media screen and (max-device-width: 867px){
+	.inhalte {
+		height: 500px;
+	}
+}
+
+
+@media screen and (max-width: 850px){
+	#inhalt {
+		float: none;
+		width: 100%
+	}
+	
+	#sidebar {
+		float: none;
+		width: 100%
+	}
+	#maininhalt{
+		width: 95.1%;
+	}
+	#kopf2{
+			 top: 35%;
+		 }
+	.inhalte {
+		height: auto;
+	}
+	#sidebar img {
+		width: 40%;
+		margin: 20px 20px 20px 20px;
+	}
+	#sidebar h1 {
+		margin: 20px 0 0 20px;
+	}
+	#sidebar p {
+		margin: 0 20px 0 20px;
+	}
+
+}
+@media screen and (max-device-width: 850px){
+	#inhalt {
+		float: none;
+		width: 100%
+	}
+
+	#sidebar {
+		float: none;
+		width: 100%
+	}
+	#maininhalt{
+		width: 95.1%;
+	}
+	#kopf2{
+		top: 35%;
+	}
+	.inhalte {
+		height: auto;
+	}
+	#sidebar img {
+		width: 40%;
+		margin: 20px 20px 20px 20px;
+	}
+	#sidebar h1 {
+		margin: 20px 0 0 20px;
+	}
+	#sidebar p {
+		margin: 0 20px 0 20px;
+	}
+
+}
+@media screen and (max-width: 833px){
+	.inhalte {
+		height: 490px;
+	}
+}
+@media screen and (max-device-width: 833px){
+	.inhalte {
+		height: 490px;
+	}
+}
+
+
+@media screen and (max-width: 688px){
+	#navigation {
+		height: auto;
+	}
+
+	#navigation li{
+		float: none;
+		width: 100%;
+		border-width: 0 1px 1px 1px;
+	}
+	.inhalte {
+		float: none;
+		width: 95%;
+		height: 520px;
+	}
+	#kopf2{
+		top: 45%;
+	}
+	#maininhalttext {
+		float: none;
+		width: 93%;
+		margin: 20px 20px 20px 20px;
+	}
+	#maininhaltbild {
+		float: none;
+		width: 93%;
+		margin: 20px 20px 20px 20px;
+	}
+	#navigation > a.icon { /* Guideline 2.4 Navigable 2.4.2 Bypass Blocks Using an expandable and collapsible menu to bypass block of content */
+		/*display: inline;*/
+		visibility: initial;
+		display: block;
+		color: #000000;
+	}
+	#navigation #navbar { /* Guideline 2.4 Navigable 2.4.2 Bypass Blocks Using an expandable and collapsible menu to bypass block of content */
+		display: none;
+	}
+	#navigation > a {
+		position: relative;
+		top: -2.7em;
+	}
+	#navigation > a:hover {
+		background-color: #a0a0a0;
+	}
+}
+@media screen and (max-device-width: 688px){
+	#navigation {
+		height: auto;
+	}
+
+	#navigation li{
+		float: none;
+		width: 100%;
+		border-width: 0 1px 1px 1px;
+	}
+	.inhalte {
+		float: none;
+		width: 95%;
+		height: 520px;
+	}
+	#maininhalttext {
+		float: none;
+		width: 93%;
+		margin: 20px 20px 20px 20px;
+	}
+	#maininhaltbild {
+		float: none;
+		width: 93%;
+		margin: 20px 20px 20px 20px;
+	}
+	#navigation > a.icon { /* Guideline 2.4 Navigable 2.4.2 Bypass Blocks Using an expandable and collapsible menu to bypass block of content */
+		/*display: inline;*/
+		/*visibility: initial;*/
+		display: block;
+		color: #ffffff;
+	}
+	#navigation #navbar { /* Guideline 2.4 Navigable 2.4.2 Bypass Blocks Using an expandable and collapsible menu to bypass block of content */
+		display: none;
+	}
+	#navigation > a {
+		position: relative;
+		top: -2.7em;
+	}
+	#navigation > a:hover {
+		background-color: #a0a0a0;
+	}
+}
+@media screen and (max-width: 650px) {
+	.inhalte{
+		height: auto;
+	}
+}
+@media screen and (max-device-width: 650px) {
+	.inhalte{
+		height: auto;
+	}
+}
+
+
+
+@media print {
+	#navigation, #sidebar {
+		display: none;
+	}
+}
+@media screen and (max-width: 1700px){
+	#kopf2 {
+		padding: 1% 72% 1% 6%
+	}
+}
+@media screen and (max-width: 1640px){
+	#kopf2 {
+		padding: 1% 71% 1% 6%
+	}
+}
+@media screen and (max-width: 1556px){
+	#kopf2 {
+		padding: 1% 70% 1% 6%
+	}
+}
+@media screen and (max-width: 1494px){
+	#kopf2 {
+		padding: 1% 69% 1% 6%
+	}
+}
+@media screen and (max-width: 1434px){
+	#kopf2 {
+		padding: 1% 68% 1% 6%
+	}
+}
+@media screen and (max-width: 1380px){
+	#kopf2 {
+		padding: 1% 67% 1% 6%
+	}
+}
+@media screen and (max-width: 1328px){
+	#kopf2 {
+		padding: 1% 66% 1% 6%
+	}
+}
+@media screen and (max-width: 1282px){
+	#kopf2 {
+		padding: 1% 64% 1% 6%
+	}
+}
+@media screen and (max-width: 1197px){
+	#kopf2 {
+		padding: 1% 62% 1% 6%
+	}
+}
+@media screen and (max-width: 1124px){
+	#kopf2 {
+		padding: 1% 60% 1% 6%
+	}
+}
+@media screen and (max-width: 1058px){
+	#kopf2 {
+		padding: 1% 58% 1% 6%
+	}
+}
+@media screen and (max-width: 1002px){
+	#kopf2 {
+		padding: 1% 56% 1% 6%
+	}
+}
+@media screen and (max-width: 949px){
+	#kopf2 {
+		padding: 1% 54% 1% 6%
+	}
+}
+@media screen and (max-width: 905px){
+	#kopf2 {
+		padding: 1% 52% 1% 6%
+	}
+}
+@media screen and (max-width: 860px){
+	#kopf2 {
+		padding: 1% 50% 1% 6%
+	}
+}
+@media screen and (max-width: 822px){
+	#kopf2 {
+		padding: 1% 48% 1% 6%
+	}
+}
+@media screen and (max-width: 788px){
+	#kopf2 {
+		padding: 1% 46% 1% 6%
+	}
+}
+@media screen and (max-width: 755px){
+	#kopf2 {
+		padding: 1% 44% 1% 6%
+	}
+}
+@media screen and (max-width: 725px){
+	#kopf2 {
+		padding: 1% 42% 1% 6%
+	}
+}
+@media screen and (max-width: 698px){
+	#kopf2 {
+		padding: 1% 38% 1% 6%
+	}
+}
+@media screen and (max-width: 650px){
+	#kopf2 {
+		padding: 1% 34% 1% 6%
+	}
+}
+@media screen and (max-width: 607px){
+	#kopf2 {
+		padding: 1% 30% 1% 6%
+	}
+}
+@media screen and (max-width: 571px){
+	#kopf2 {
+		padding: 1% 28% 1% 6%
+	}
+}
+@media screen and (max-width: 554px){
+	#kopf2 {
+		padding: 1% 20% 1% 6%
+	}
+}
+@media screen and (max-width: 495px){
+	#kopf2 {
+		padding: 1% 12% 1% 6%
+	}
+}
+@media screen and (max-width: 450px){
+	#kopf2 {
+		padding: 1% 4% 1% 6%
+	}
+}
+@media screen and (max-width: 411px){
+	#kopf2 {
+		padding: 1% 0% 1% 6%
+	}
+}

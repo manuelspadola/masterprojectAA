@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Guideline 3.1 Readable 3.1.1 Language of Page H57 H57: Using language attributes on the html element  -->
+
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="javaScript/main.js"></script>
+    <title>Corona Schutzimpfung gemeinsam gegen COVID-19</title>
+    <!--Guideline 2.4 Navigable 2.4.2 Page Titled H25 Providing a title using the title element -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function toggle(id) { /* Guideline 2.4 Navigable 2.4.2 Bypass Blocks Using an expandable and collapsible menu to bypass block of content */
+            var n = document.getElementById(id);
+            if (n.style.display === "block") {
+                n.style.display = "none";
+            } else {
+                n.style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <div id="kopf">
+        <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H48 Using ol, ul and dl for lists or groups of links  -->
+        <ul class="skip-link">
+            <!--Guideline 2.4 Navigable 2.4.2 Bypass Blocks G1 Adding a link at the top of each page to goes directly to the main content -->
+            <li> <a href="#cont">Skip to main Content</a></li>
+            <li> <a href="#sidebar">Skip to Sidebar</a></li>
+        </ul>
+
+        <div id="kopf2">
+            <h1 class="ueberschrift"> <span> Corona Schutzimpfung </span> </h1>
+        </div>
+
+    </div>
+    <div id="navigation">
+        <a href="#" class="icon" onclick="toggle('navbar')"><i class="fa fa-bars"></i></a>
+        <!--Guideline 2.4 Navigable 2.4.2 Bypass Blocks Using an expandable and collapsible menu to bypass block of content -->
+
+        <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+        <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H48 Using ol, ul and dl for lists or groups of links  -->
+        <ul id="navbar">
+            <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+            <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+            <!-- Guideline 2.1 Keyboard accessible  2.1.1 Keyboard  H91 Using HTML form controls and links  href von links immer im a TAG Element-->
+            <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+            <li class="ausgewaehlt"><a href="#" title="dieser Link bringt sie zur Hauptseite von Corona Impfung"><i
+                        class="fa fa-home"></i> Home<span class="visually-hidden">dieser Link bringt sie zur Hauptseite von Corona Impfung</span> </a></li>
+
+            <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+            <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+            <!-- Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Links durch Zeichen oder Icons für Farbblinde hervor heben -->
+            <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+            <li><a href="proContra.html" title="dieser Link bringt sie zur Seite Pro und Contra Coronaimpfung"><i
+                        class="fa fa-bars"></i> Pro&Contra <span
+                    class="visually-hidden">dieser Link bringt sie zur Seite Pro und Contra Coronaimpfung</span></a></li>
+
+            <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+            <!-- Guideline 1.4 Distinguishable 1.4.1 Use of Color G182 Ensuring that additional visual cues are available when text color differences are used to convey information  Links durch Zeichen oder Icons für Farbblinde hervor heben -->
+            <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+            <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+            <li><a href="coronaZDF.html" title="dieser Link bringt sie zur Seite Corona Zahlen Daten Fakten"><i
+                        class="fa fa-bars"></i> Corona ZDF <span
+                    class="visually-hidden">dieser Link bringt sie zur Seite Corona Zahlen Daten Fakten</span></a></li>
+
+        </ul>
+    </div>
+    <div id="inhalt">
+        <div id="maininhalt">
+            <div id="maininhaltbild">
+                <!-- Guideline 2.1 Keyboard Accessible 2.1.1 Keyboard H91 Using HTML form controls and links  -->
+                <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+                <a href="coronaVsInfluenza.html"><img class="inhaltebilder"
+                        src="assets/coronaimpfung-vs-grippenimpfung.jpg" alt="Virus im Vergleich zu Bakterie"></a>
+
+            </div>
+
+            <div id="maininhalttext">
+                <a id="cont" tabindex="-1">
+                    <!-- Guideline 1.3 Adaptable 1.3.1 Info and Relationships H42 Using h1-h6 to identify headings   -->
+                    <h1>Vergleich Coronavirus vs Influenza</h1>
+                </a>
+
+                <!-- Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <!--AA Guideline 2.4 Navigable 2.4.2 Bypass Blocks G1 Adding a link at the top of each page to goes directly to the main content -->
+                <p>Während sich der COVID-19-Ausbruch weiterentwickelt, wurden Vergleiche mit Influenza gezogen.
+                    Beide verursachen Atemwegserkrankungen, es gibt jedoch wichtige Unterschiede zwischen den
+                    beiden Viren und ihrer Ausbreitung. Dies hat wichtige Auswirkungen auf die Maßnahmen im Bereich
+                    der öffentlichen Gesundheit, die umgesetzt werden können, um auf jedes Virus zu reagieren.
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                    <!-- Guideline 2.4 Navigable 2..4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="coronaVsInfluenza.html"
+                        title="dieser Link bringt sie zur Seite Corona vs Influenza"> Möchten Sie mehr Wissen? <i
+                            class="fa fa-external-link-square"></i><span
+                            class="visually-hidden">dieser Link bringt sie zur Seite Corona vs Influenza</span></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="inhalte">
+            <div class="container">
+                <!-- Guideline 2.1 Keyboard Accessible 2.1.1 Keyboard H91 Using HTML form controls and links -->
+                <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+                <a href="risiko.html"><img class="inhaltebilder" src="assets/risiko-coronaimpfung.jpeg"
+                        alt="Arzt iniziert mittels Coronaspritze eine Coronaimpfung in den Oberarm eines Patienten"></a>
+
+                <h2>Risiko bei Impfungen</h2>
+
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>Weltweit hoffen Millionen Menschen auf eine baldige Impfung gegen das Coronavirus. Gleichzeitig sind
+                    viele Menschen zwiegespalten, weil sie sich zwar einerseits gegen eine Infektion schützen wollen,
+                    gleichzeitig aber mögliche Nebenwirkungendurch eine Impfung fürchten.
+
+                    <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                    <!-- Guideline 2.4 Navigable 2..4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="risiko.html" title="dieser Link bringt sie zur Seite Risiko Coronaimpfung">
+                        Möchten Sie mehr Wissen? <i class="fa fa-external-link-square"><span
+                            class="visually-hidden">dieser Link bringt sie zur Seite Risiko Coronaimpfung</span></i></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="inhalte">
+            <div class="container">
+                <!-- Guideline 2.1 Keyboard Accessible 2.1.1 Keyboard H91 Using HTML form controls and links -->
+                <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+                <a href="expertenmeinungen.html"> <img class="inhaltebilder" src="assets/aerztin-mit-impfspritze.jpg"
+                        alt="Ärztin in Schutzkleidung hält beide Daumen Hoch während sie in der linken Hand eine Coronaimpfung hält"></a>
+
+                <h2>Expertenmeinungen</h2>
+
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>Die SARS-CoV-2 Impfstoffe, die vor der Zulassung stehen, wurden an Zehntausenden Personen getestet
+                    und haben eine vergleichbare Wirksamkeit zu anderen Vakzinen, erklärten Experten am 26.11.2020 vor
+                    Journalisten. Sie wären auch für ältere Menschen mit Begleiterkrankungen geeignet.
+
+                    <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                    <!-- Guideline 2.4 Navigable 2..4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="expertenmeinungen.html"
+                        title="dieser Link bringt sie zur Seite Expertenmeingungen"> Möchten Sie mehr Wissen? <i
+                            class="fa fa-external-link-square"></i><span
+                            class="visually-hidden">dieser Link bringt sie zur Seite Expertenmeingungen</span></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="inhalte">
+            <div class="container">
+                <!-- Guideline 2.1 Keyboard Accessible 2.1.1 Keyboard H91 Using HTML form controls and links -->
+                <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+                <a href="proContra.html"><img class="inhaltebilder" src="assets/pro-contra-coronaimpfung.jpg"
+                        alt="ein grüner Pfeil auf dem Pro steht und ein roter Pfeil auf dem Contra steht, die sich in der Mitte treffen "></a>
+
+                <h2>Pro & Contra zur Impfung</h2>
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>Impfungen gelten allgemein als wirksame, präventive Maßnahmen und schützen vor Krankheiten, die
+                    früher oft tödlich endeten. Dennoch werden sie oftmals kontrovers diskutiert. Welche Vor- und
+                    Nachteile gibt es bei Impfungen und welche Risiken muss man in Kauf nehmen?
+
+                    <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="proContra.html"
+                        title="dieser Link bringt sie zur Seite Pro und Contra Coronaimpfung"> Möchten Sie mehr Wissen?
+                        <i class="fa fa-external-link-square"></i><span
+                                class="visually-hidden">dieser Link bringt sie zur Seite Pro und Contra Coronaimpfung</span></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="inhalte">
+            <div class="container">
+                <a href="alternativen.html"><img class="inhaltebilder"
+                        src="assets/hydroxychloroquine-alternative-zur-coronaimpfung.jpg"
+                        alt="4 kleine plastik Behälter mit Tabletten"></a>
+                <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+                <h2>Alternativen zur Impfung</h2>
+
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>Forscher tüfteln an Alternative zu Impfstoff, es gibt aber mehrere große Haken. In Großbritannien
+                    wird in Studien untersucht, ob künstlich hergestellte Antikörper gegen das Coronavirus wirken. Ein
+                    Ersatz für den Corona-Impfstoff soll diese Variante aber nicht sein. Wie könnte die passive
+                    Corona-Impfung aussehen.
+
+                    <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                    <!-- Guideline 2.4 Navigable 2..4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="alternativen.html"
+                        title="dieser Link bringt sie zur Seite Pro und Contra Coronaimpfung"> Möchten Sie mehr Wissen?
+                        <i class="fa fa-external-link-square"></i><span
+                                class="visually-hidden">dieser Link bringt sie zur Seite Pro und Contra Coronaimpfung</span></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="inhalte">
+            <div class="container">
+                <!-- Guideline 2.1 Keyboard Accessible 2.1.1 Keyboard H91 Using HTML form controls and links -->
+                <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+                <img class="inhaltebilder" src="assets/corona-impfstofftypen1.jpg"
+                    alt="Mehrere dutzend Coronaimpstofffläschchen von verschiedenen Herstellern und 8 unterschiedlichen Typen in den Farbtönen Lila, Grün, Bronze, Gold, Blau   ">
+
+                <h2>Arten von Impfstoffen</h2>
+
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>Gegen Covid-19 sind seit Januar 2020 mindestens 260 Impfstoffprojekte angelaufen. Lebend-, Tot-,
+                    Vektor- oder RNA-Impfstoff. Warum gibt es so viele Impfstoffarten? Wie sicher sind Impfstoffe?
+                    Können sie bleibende Schäden verursachen? Das und mehr lesen Sie in unseren Fragen und Antworten.
+
+                    <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="impfstoffe.html"
+                        title="dieser Link bringt sie zur Seite verschiedene Impfstofftypen"> Möchten Sie mehr Wissen?
+                        <i class="fa fa-external-link-square"></i><span
+                                class="visually-hidden">dieser Link bringt sie zur Seite verschiedene Impfstofftypen</span></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="inhalte">
+            <div class="container">
+                <!-- Guideline 2.1 Keyboard Accessible 2.1.1 Keyboard H91 Using HTML form controls and links -->
+                <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+                <a href="coronaZDF.html"><img class="inhaltebilder" src="assets/zahlen-daten-fakten.jpg"
+                        alt="ein aufgeschlagenes Buch mit vielen Tabellen in denen Zahlen stehen, auf dem ein Notizblock und ein Kugelschreiber liegen"></a>
+
+                <h2>Corona ZDF</h2>
+
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>Laut aktuellster Modellrechnung der Agentur für Gesundheit und Ernährungssicherheit (AGES) vom 19.2.
+                    liegt die effektive Reproduktionszahl für den Zeitraum vom 5.2. bis 17.2. bei 1,04. Eine infizierte
+                    Person konnte im Modell 1,04 weitere hypothetische Personen anstecken.
+
+                    <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                    <!-- Guideline 2.4 Navigable 2..4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="coronaZDF.html"
+                        title="dieser Link bringt sie zur Seite Corona Zahlen Daten Fakten"> Möchten Sie mehr Wissen? <i
+                            class="fa fa-external-link-square"></i><span
+                            class="visually-hidden">dieser Link bringt sie zur Seite Corona Zahlen Daten Fakten</span></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <div class="sidebarContainer">
+            <div>
+                <!-- Guideline 1.1 Text Alternatives 1.1.1 Non text Content H37 alt Attribut damit das Bild beschrieben wird-->
+                <!-- Guideline 2.4 Navigable 2.4.1 Bypass Blocks H69 Providing heading elements at the beginning of each section of content   -->
+                <img class="sidebarBilder" src="assets/newsletter-corona.jpg"
+                    alt="Tastaturtasten in rot und weiß mit der Aufschrift Corona Newsletter">
+
+
+                <!--Guideline 2.4 Navigable 2.4.2 Bypass Blocks G1 Adding a link at the top of each page to goes directly to the main content -->
+                <a id="side">
+                    <h1>Aktuelle Informationen</h1>
+                </a>
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>
+                    Lesen Sie hier, welche Symptome das Coronavirus auslöst, wer die besonders gefährdeten Risikogruppen
+                    sind, wie das Virus übertragen wird und wie Sie sich gegen eine Ansteckung schützen können. Außerdem
+                    finden Sie Erklärungen wichtiger Begriffe wie K1, Absonderungsbescheid oder PCR-Test.
+
+                    <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="https://coronavirus.wien.gv.at/"
+                        title="dieser Link bringt sie zur Seite Coronavirus Wien"> Möchten Sie mehr Wissen? <i
+                            class="fa fa-external-link-square"></i><span
+                            class="visually-hidden">dieser Link bringt sie zur Seite Coronavirus Wien</span></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="sidebarContainer">
+            <div>
+                <!-- Guideline 2.4 Navigable 2.4.1 Bypass Blocks H69 Providing heading elements at the beginning of each section of content   -->
+                <h1>Aktuelle Corona-Regeln Wien</h1>
+
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>Lesen Sie hier, welche Symptome das Coronavirus auslöst, wer die besonders gefährdeten Risikogruppen
+                    sind, wie das Virus übertragen wird und wie Sie sich gegen eine Ansteckung schützen können. Außerdem
+                    finden Sie Erklärungen wichtiger Begriffe wie K1, Absonderungsbescheid oder PCR-Test.
+
+                    <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) H33 Supplementing link text with the title attribute -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose (In Context) c7 Using CSS to hide a portion of the link text -->
+                    <!-- Guideline 2.4 Navigable 2.4.4 Link Purpose(in Context) G91 Providing link text that describes the purpose of a link -->
+                    <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208  Including the text of the visible label as part of the accessible name -->
+                    <a class="link" href="https://coronavirus.wien.gv.at/neue-corona-regeln/"
+                        title="dieser Link bringt sie zur Seite Coronavirus Wien"><span class="visually-hidden">Möchten
+                            Sie mehr Wissen? </span> Möchten Sie mehr Wissen? <i
+                            class="fa fa-external-link-square"></i><span
+                            class="visually-hidden">dieser Link bringt sie zur Seite Coronavirus Wien</span></a>
+
+                </p>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="sidebarContainer">
+            <div>
+                <!-- Guideline 2.4 Navigable 2.4.1 Bypass Blocks H69 Providing heading elements at the beginning of each section of content   -->
+                <h1>Newsletter abonnieren</h1>
+                <!-- AA Guideline 3.1 Readable 3.1.2 Language of Parts H58 Using language attributes to identify changes in the human language -->
+                <blockquote lang="de">
+                <p>
+                    Wenn sie den Newsletter abonnieren werden sie über aktuelle Neuigkeiten informiert.
+                </p>
+                </blockquote>
+                <!-- Guideline 1.4 Distinguishable 1.4.1 Use of Color C15 Using CSS to change the presentation of a user interface component when it receives focus  -->
+                <form name="validateForm" method="post" action="form.php" onsubmit="event.preventDefault()">
+
+                    <br>
+                    <fieldset>
+                        <!-- Guidline 1.3 Adaptable 1.3.1 Info and Relationships G117 Using text to convey information that is conveyed by variations in presentation of text -->
+                        <legend><strong>eMail Eingabe</strong> </legend>
+
+                        <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                        <!-- AA Guideline 2.4 Navigable 2.4.6 Heading and Labels G131 Providing descriptive labels  -->
+                        <!-- Guideline 1.4 Distinguishable 1.4.1 Use of Color G205 Including a text cue for colored form control labels -->
+                        <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G211 Matching the accessible name to the visible label -->
+                        <p class="required"><label  for="email" class="required">eMail (required): </label>
+                            <!-- AA Guideline 3.3 Input Assistance 3.3.3 Error Suggestion G83 Providing text descriptions to identify required fields that were not completed z.B: Alert -->
+                            <input class="text" type="email" name="email" id="email" value="mrgoogle@gmail.com" required onkeyup="manage(this)" />
+                        </p>
+                        <p>
+
+                            <!-- AA Guideline 2.4 Navigable 2.4.7 C15 Using CSS to change the presentation of a user interface component when it receives focus -->
+                            <!-- AA Guideline 3.3 Input Assistance 3.3.3 Error Suggestion G83 Providing text descriptions to identify required fields that were not completed z.B: Alert -->
+                            <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G211 Matching the accessible name to the visible label -->
+                            <input type="radio" name="human" value="robot" id="sm" checked="checked" /> <label for="sm">i
+                                am robot</label><br />
+                            <input type="radio" name="human" value="human" id="sf" required  /> <label id="human" for="sf">i am
+                                human</label>
+                        <p>
+                        <p>
+                        <!-- AA Guideline 3.3 Input Assistance 3.3.3 Error Suggestion G83 Providing text descriptions to identify required fields that were not completed z.B: Alert -->
+                        <!-- Guideline 2.5 Input Modalities 2.5.3 Label in Name G208 Including the text of the visible label as part of the accessible name -->
+                            <button type="submit" id="submitbutton" disabled onclick="meldungMachen()"><span class="accessibly-hidden">
+                                    Newsletter</span>abonnieren<span class="accessibly-hidden">
+                                    abschicken</span></button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="fuss">
+        <p>Webdesign by Manuel Spadola</p>
+    </div>
+</body>
+
+
+
+
+</html>

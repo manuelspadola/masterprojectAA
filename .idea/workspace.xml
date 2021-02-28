@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd5edbbc-e811-4644-b571-3a6510c7fd32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS1.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coronaimpfung vs Grippenimpfung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Risiko Coronaimpfung.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eiffeltower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imageformatservlet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kKt40ERylyi3bUodRBE4y2Pcze" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd5edbbc-e811-4644-b571-3a6510c7fd32" name="Default Changelist" comment="" />
+      <created>1605538290076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605538290076</updated>
+      <workItem from="1605538292537" duration="607000" />
+      <workItem from="1605549025055" duration="8171000" />
+      <workItem from="1605610390849" duration="8915000" />
+      <workItem from="1607097997015" duration="255000" />
+      <workItem from="1613491158028" duration="16446000" />
+      <workItem from="1613584694662" duration="4658000" />
+      <workItem from="1613647229261" duration="39413000" />
+      <workItem from="1613740351894" duration="359000" />
+      <workItem from="1613740799811" duration="10636000" />
+      <workItem from="1613772232836" duration="9321000" />
+      <workItem from="1613834785019" duration="6979000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
