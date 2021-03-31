@@ -376,10 +376,13 @@ legend {
 	display: inherit;
 }
 .teln {
-	display: inherit;
+	display: inline-flex;
 }
 .text {
-    display: inherit;
+    display: inline-flex;
+}
+.tel {
+	display: inherit;
 }
 /*Diese Regeln sorgen dafür, dass die Navigationseinträge untereinander geschrieben werden. So bleibt auch auf kleinen Bildschirmen alles schön.
 */
