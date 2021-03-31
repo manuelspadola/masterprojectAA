@@ -378,6 +378,9 @@ legend {
 .teln {
 	display: inherit;
 }
+.text {
+    display: inherit;
+}
 /*Diese Regeln sorgen dafür, dass die Navigationseinträge untereinander geschrieben werden. So bleibt auch auf kleinen Bildschirmen alles schön.
 */
 @media screen and (max-width: 1920px){
